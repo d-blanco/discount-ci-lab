@@ -14,4 +14,7 @@ def calculate_discounted_price(price, customer_type, coupon_code=None, is_holida
         price = price * 0.95
     return round(price, 2)
 
-ERROR_MESSAGE = "this string is intentionally too long and will cause flake8 to complain because it exceeds one hundred characters"
+SUPPORTED_COUPON_CODES = {
+    "SAVE10": "10% off for all customers",
+    "SAVE20": "20% off exclusively for premium customers",
+}
